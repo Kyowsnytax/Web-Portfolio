@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Portfolio - David</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    
+    <style>
+      .typing {
+        border-right: 3px solid #000;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 0;
+        animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 13ch; } 
+      }
+
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Home -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">David's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About sakin -->
+    <section id="home" class="main d-flex align-items-center min-vh-100 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+        
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img src="img/David.jpg" alt="David's Photo" class="img-fluid rounded-circle shadow" width="250">
+          </div>
+         
+          <div class="col-lg-8 text-center text-lg-start">
+            <h1 class="fw-bold">Hello, I'm <span class="text-primary">John David Peralta</span></h1>
+            <h4 class="mb-3"><span class="typing">Web Developer</span></h4>
+            <p class="lead">I design and develop responsive websites.</p>
+            <a href="#" class="btn btn-outline-dark me-2">Download Resume</a>
+            <a href="#" class="btn btn-outline-dark">Application Letter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About ulit -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">About Me</h2>
+        <div class="row align-items-center">
+
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img src="img/David.jpg" alt="David's Photo" class="img-fluid rounded shadow">
+          </div>
+          
+          <div class="col-lg-8">
+            <p><strong>Name:</strong> John David Peralta</p>
+            <p><strong>Age:</strong> 21</p>
+            <p><strong>Height:</strong> 5'6"</p>
+            <p><strong>Weight:</strong> 60kg</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Address:</strong> Sariaya, Quezon</p>
+
+            <h5 class="fw-bold mt-3">Professional Summary</h5>
+            <p>I am passionate about creating efficient, user-friendly websites and applications. 
+               Skilled in HTML, CSS, JavaScript, Bootstrap, and eager to learn new technologies.</p>
+
+            <h5 class="fw-bold mt-3">Skills</h5>
+            <ul>
+              <li>Front-End Development (HTML, CSS, Bootstrap, JavaScript)</li>
+              <li>Basic Back-End (PHP, MySQL)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Education</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h5>Bachelor of Science in Information Technology</h5>
+            <p>CSTC, Sariaya Quezon | 2023 - Present</p>
+          </li>
+          <li class="list-group-item">
+            <h5>Senior High School - TVL Strand</h5>
+            <p>DJG High School, Pampanga | Graduated 2022</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Hobbies</h2>
+        <div class="row align-items-center">
+      
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img src="img/save.jpg" alt="Esports Jersey" class="img-fluid rounded shadow">
+          </div>
+       
+          <div class="col-lg-8">
+            <h4 class="fw-bold">Esports & Gaming</h4>
+            <p>
+              I’m passionate about competitive gaming and esports. 
+              In my free time, I love to play online games with my friends. 
+              Gaming has taught me teamwork, leadership, and focus under pressure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAA -->
+    <footer id="contact" class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-1">Contact Me:</p>
+        <p>Email: david@gmail.com | Phone: +1 234 567 890</p>
+        <a href="https://facebook.com" class="text-light me-3">Facebook</a>
+        <a href="https://discord.com" class="text-light">Discord</a>
+        <p class="mt-3">&copy; 2025 David's Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+/* Home */
+.main {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding-top: 100px;
+}
+
+.main h1 {
+  font-size: 2.8rem;
+}
+
+.main h4 {
+  font-weight: 500;
+  color: #555;
+}
+
+.main img {
+  border: 5px solid #fff;
+}
+
+/* Section */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 10px auto;
+}
+
+/* About */
+#about img {
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+/* Education */
+.list-group-item {
+  border: none;
+  padding: 15px 20px;
+  border-left: 4px solid #000;
+  background-color: #fdfdfd;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hobbies */
+#hobbies img {
+  max-width: 280px;
+  border-radius: 10px;
+  border: 4px solid #f1f1f1;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#hobbies img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#hobbies h4 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ddd;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 1.8rem;
+  }
+  .main h4 {
+    font-size: 1rem;
+  }
+  .main img {
+    width: 180px;
+  }
+  #about img,
+  #hobbies img {
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .main h1 {
+    font-size: 2.2rem;
+  }
+  .main h4 {
+    font-size: 1.2rem;
+  }
+  .main img {
+    width: 200px;
+  }
+  #about img,
+  #hobbies img {
+    max-width: 240px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .main h1 {
+    font-size: 2.5rem;
+  }
+  .main h4 {
+    font-size: 1.3rem;
+  }
+  #about img,
+  #hobbies img {
+    max-width: 260px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .main h1 {
+    font-size: 2.6rem;
+  }
+  .main h4 {
+    font-size: 1.4rem;
+  }
+  #about img,
+  #hobbies img {
+    max-width: 270px;
+  }
+}
